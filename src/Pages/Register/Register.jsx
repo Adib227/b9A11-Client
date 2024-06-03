@@ -55,7 +55,9 @@ const Register = () => {
         <div className="hero max-w-6xl mx-auto min-h-screen bg-base-200 my-12 rounded-lg">
           <div className="hero-content flex-col ">
             <div className="text-center lg:text-left">
-              <h1 className="text-5xl mb-8 font-bold">Register now!</h1>
+              <h1 className="text-5xl mb-8 font-bold  animate__animated animate__fadeInDownBig ">
+                Register now!
+              </h1>
             </div>
             <div className="card shrink-0 w-full lg:w-[700px] max-w-sm shadow-2xl bg-base-100">
               <form onSubmit={handleRegister} className="card-body">

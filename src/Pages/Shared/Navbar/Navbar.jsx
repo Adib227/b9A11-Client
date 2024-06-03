@@ -71,21 +71,26 @@ const Navbar = () => {
             </div>
             <ul
               tabIndex={0}
-              className="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52"
+              className="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52 animate__animated animate__fadeInDown"
             >
               {navItems}
             </ul>
           </div>
           <div className="flex">
             <img
+              className="animate__animated animate__backInRight"
               src="https://i.ibb.co/HhDJsrg/Screenshot-2024-06-04-023604.png"
               alt=""
             />
-            <a className="btn btn-ghost text-4xl font-bold">Helpass</a>
+            <a className="btn btn-ghost text-4xl font-bold animate__animated animate__backInRight">
+              Helpass
+            </a>
           </div>
         </div>
         <div className="navbar-center hidden lg:flex">
-          <ul className="menu menu-horizontal px-1 ">{navItems}</ul>
+          <ul className="menu menu-horizontal px-1 animate__animated animate__fadeInDown">
+            {navItems}
+          </ul>
         </div>
 
         <div className="navbar-end">
@@ -117,7 +122,10 @@ const Navbar = () => {
                 content="Please Sign Out"
                 className="text-black font-semibold rounded-lg p-3"
               >
-                <button onClick={handleLogOut} className="btn btn-active">
+                <button
+                  onClick={handleLogOut}
+                  className="btn btn-active  animate__animated animate__backInLeft"
+                >
                   Sign Out
                 </button>
               </tippy>
@@ -128,7 +136,9 @@ const Navbar = () => {
                 content="Please Login"
                 className="text-black font-bold rounded-lg p-3"
               >
-                <button className="btn btn-active">Login</button>
+                <button className="btn btn-active  animate__animated animate__backInLeft">
+                  Login
+                </button>
               </tippy>
             </Link>
           )}

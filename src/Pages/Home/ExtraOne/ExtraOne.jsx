@@ -3,11 +3,11 @@ import 'animate.css';
 const ExtraOne = () => {
   return (
     <div className="bg-[#fff9ed] my-7 lg:my-24 p-3 lg:p-9">
-      <div className="py-6">
-        <h2 className="text-2xl text-[#ef7c40] text-center font-medium">
+      <div className="py-6 ">
+        <h2 className="text-2xl text-[#ef7c40] text-center font-medium animate__animated animate__bounceInLeft">
           - Happy Volunteer -
         </h2>
-        <h1 className="text-4xl lg:text-5xl text-[#1e3446] text-center font-semibold">
+        <h1 className="text-4xl lg:text-5xl text-[#1e3446] text-center font-semibold animate__animated animate__bounceInRight">
           Our Happy Volunteer
         </h1>
       </div>

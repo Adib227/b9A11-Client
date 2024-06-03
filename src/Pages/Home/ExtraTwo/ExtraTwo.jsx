@@ -2,8 +2,12 @@ import 'animate.css';
 
 const ExtraTwo = () => {
   return (
-    <div className="grid lg:flex max-w-full justify-evenly p-10 lg:p-24 my8 lg:my-16">
-      <div className="p-8 lg:p-24">
+    <div
+      className="grid lg:flex max-w-full justify-evenly p-10 lg:p-24 my8 lg:my-16"
+      data-aos="zoom-in"
+      data-aos-duration="1300"
+    >
+      <div className="p-8 lg:p-24" data-aos="zoom-in" data-aos-duration="1300">
         <p className="text-[#ef7c40] text-2xl">- OUR VOLUNTEER -</p>
         <h2 className="text-[#1e3446] text-4xl font-serif font-bold my-3">
           {' '}

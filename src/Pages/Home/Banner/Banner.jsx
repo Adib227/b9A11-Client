@@ -9,7 +9,7 @@ import { Pagination } from 'swiper/modules';
 
 export function Banner() {
   return (
-    <div className="max-w-7xl mx-auto">
+    <div className="max-w-7xl mx-auto animate__animated animate__fadeInUp">
       <Swiper
         pagination={{
           dynamicBullets: true,

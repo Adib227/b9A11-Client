@@ -61,12 +61,17 @@ const Login = () => {
       <Helmet>
         <title></title>
       </Helmet>
-      <div className="hero max-w-6xl mx-auto min-h-screen bg-base-200 my-12 rounded-lg">
+      <div
+        className="hero max-w-6xl mx-auto min-h-screen bg-base-200 my-12 rounded-lg"
+        data-aos="zoom-in-up"
+      >
         <div className="hero-content flex-col ">
           <div className="text-center lg:text-left">
-            <h1 className="text-5xl font-bold mb-8">Login now!</h1>
+            <h1 className="text-5xl font-bold mb-8 animate__animated animate__fadeInDownBig ">
+              Login now!
+            </h1>
           </div>
-          <div className="card shrink-0 w-full lg:w-[600px] max-w-sm shadow-2xl bg-base-100">
+          <div className="card shrink-0 w-full lg:w-[600px] max-w-sm shadow-2xl bg-base-100 animate__animated animate__fadeInUp">
             <form onSubmit={handleLogin} className="card-body">
               <div className="form-control">
                 <label className="label">
