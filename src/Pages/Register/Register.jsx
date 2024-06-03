@@ -3,6 +3,7 @@ import { Link } from 'react-router-dom';
 import { FaEye, FaEyeSlash } from 'react-icons/fa';
 import { AuthContext } from '../../Providers/AuthProvider';
 import { Helmet } from 'react-helmet';
+import 'animate.css';
 
 const Register = () => {
   const { registerUser } = useContext(AuthContext);

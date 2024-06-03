@@ -2,6 +2,7 @@ import { useContext, useEffect, useState } from 'react';
 import { Link } from 'react-router-dom';
 import { AuthContext } from '../../../Providers/AuthProvider';
 import tippy from 'tippy.js';
+import 'animate.css';
 
 const Navbar = () => {
   const { logOut, user } = useContext(AuthContext);
@@ -17,16 +18,16 @@ const Navbar = () => {
 
   const navItems = (
     <>
-      <li className="font-semibold">
+      <li className="font-semibold font-serif">
         <Link to="/">Home </Link>
       </li>
-      <li className="font-semibold">
+      <li className="font-semibold font-serif">
         <Link to="/addVolunteer">Add Volunteer </Link>
       </li>
-      <li className="font-semibold">
+      <li className="font-semibold ">
         <Link to="/about">About</Link>
       </li>
-      <li className="font-semibold">
+      <li className="font-semibold font-serif">
         <Link>Contact Us</Link>
       </li>
     </>
@@ -75,10 +76,16 @@ const Navbar = () => {
               {navItems}
             </ul>
           </div>
-          <a className="btn btn-ghost text-xl">daisyUI</a>
+          <div className="flex">
+            <img
+              src="https://i.ibb.co/HhDJsrg/Screenshot-2024-06-04-023604.png"
+              alt=""
+            />
+            <a className="btn btn-ghost text-4xl font-bold">Helpass</a>
+          </div>
         </div>
         <div className="navbar-center hidden lg:flex">
-          <ul className="menu menu-horizontal px-1">{navItems}</ul>
+          <ul className="menu menu-horizontal px-1 ">{navItems}</ul>
         </div>
 
         <div className="navbar-end">

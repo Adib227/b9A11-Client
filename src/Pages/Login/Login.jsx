@@ -4,6 +4,7 @@ import { getAuth, signOut } from 'firebase/auth';
 import { Helmet } from 'react-helmet';
 import { ToastContainer } from 'react-toastify';
 import { AuthContext } from '../../Providers/AuthProvider';
+import 'animate.css';
 
 const Login = () => {
   const { newUser, signInWithGoogle } = useContext(AuthContext);

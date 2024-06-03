@@ -1,5 +1,6 @@
 import { useContext } from 'react';
 import { AuthContext } from '../../Providers/AuthProvider';
+import 'animate.css';
 
 const AddVolunteer = () => {
   const { user } = useContext(AuthContext);

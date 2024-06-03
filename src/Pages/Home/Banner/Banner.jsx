@@ -19,42 +19,35 @@ export function Banner() {
       >
         <SwiperSlide>
           <img
-            className="h-[650px] w-full rounded-xl"
+            className="h-full lg:h-[650px] w-full rounded-xl"
             src="https://i.ibb.co/Lp8krZh/photo-1547082688-9077fe60b8f9.jpg"
             alt=""
           />
         </SwiperSlide>
         <SwiperSlide>
           <img
-            className="h-[650px] w-full rounded-xl"
+            className="h-full lg:h-[650px] w-full rounded-xl"
             src="https://i.ibb.co/hFVcJrw/photo-1557660559-42497f78035b.jpg"
             alt=""
           />
         </SwiperSlide>
         <SwiperSlide>
           <img
-            className="h-[650px] w-full rounded-xl"
-            src="https://i.ibb.co/3BZ0QNS/photo-1652971876875-05db98fab376.jpg"
-            alt=""
-          />
-        </SwiperSlide>
-        <SwiperSlide>
-          <img
-            className="h-[650px] w-full rounded-xl"
+            className="h-full lg:h-[650px] w-full rounded-xl"
             src="https://i.ibb.co/JBKRW9s/photo-1590874023110-f82d4c63b599.jpg"
             alt=""
           />
         </SwiperSlide>
         <SwiperSlide>
           <img
-            className="h-[650px] w-full rounded-xl"
+            className="h-full lg:h-[650px] w-full rounded-xl"
             src="https://i.ibb.co/KxBnFvN/premium-photo-1681152790480-07392bfe9b62.jpg"
             alt=""
           />
         </SwiperSlide>
         <SwiperSlide>
           <img
-            className="h-[650px] w-full rounded-xl"
+            className="h-full lg:h-[650px] w-full rounded-xl"
             src="https://i.ibb.co/YL0QRxM/photo-1618477462041-2b6b1920e073.jpg"
             alt=""
           />
