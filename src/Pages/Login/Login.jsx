@@ -59,7 +59,7 @@ const Login = () => {
   return (
     <div>
       <Helmet>
-        <title></title>
+        <title>Helpass - Login</title>
       </Helmet>
       <div
         className="hero max-w-6xl mx-auto min-h-screen bg-base-200 my-12 rounded-lg"

@@ -5,6 +5,10 @@ import Login from '../Pages/Login/Login';
 import Register from '../Pages/Register/Register';
 import AddVolunteer from '../Pages/AddVolunteer/AddVolunteer';
 import ErrorPage from '../Pages/ErrorPage/ErrorPage';
+import PrivateRoute from './PrivateRoute/PrivateRoute';
+import BeAVolunteer from '../Pages/BeAVolunteer/BeAVolunteer';
+import NeedVolunteer from '../Pages/NeedVolunteer/NeedVolunteer';
+import ContactUs from '../Pages/ContactUs/ContactUs';
 
 const router = createBrowserRouter([
   {
@@ -18,7 +22,23 @@ const router = createBrowserRouter([
       },
       {
         path: '/addVolunteer',
-        element: <AddVolunteer></AddVolunteer>,
+        element: (
+          <PrivateRoute>
+            <AddVolunteer></AddVolunteer>
+          </PrivateRoute>
+        ),
+      },
+      {
+        path: '/beAVolunteer',
+        element: <BeAVolunteer></BeAVolunteer>,
+      },
+      {
+        path: '/needVolunteer',
+        element: <NeedVolunteer></NeedVolunteer>,
+      },
+      {
+        path: '/contactUs',
+        element: <ContactUs></ContactUs>,
       },
       {
         path: '/login',

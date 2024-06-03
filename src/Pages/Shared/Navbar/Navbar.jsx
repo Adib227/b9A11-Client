@@ -24,11 +24,14 @@ const Navbar = () => {
       <li className="font-semibold font-serif">
         <Link to="/addVolunteer">Add Volunteer </Link>
       </li>
-      <li className="font-semibold ">
-        <Link to="/about">About</Link>
+      <li className="font-semibold font-serif">
+        <Link to="/beAVolunteer">Be A Volunteer</Link>
       </li>
       <li className="font-semibold font-serif">
-        <Link>Contact Us</Link>
+        <Link to="/needVolunteer">Need Volunteer</Link>
+      </li>
+      <li className="font-semibold font-serif">
+        <Link to="/contactUs">Contact Us</Link>
       </li>
     </>
   );
@@ -82,9 +85,12 @@ const Navbar = () => {
               src="https://i.ibb.co/HhDJsrg/Screenshot-2024-06-04-023604.png"
               alt=""
             />
-            <a className="btn btn-ghost text-4xl font-bold animate__animated animate__backInRight">
+            <Link
+              to="/"
+              className="btn btn-ghost text-4xl font-bold animate__animated animate__backInRight"
+            >
               Helpass
-            </a>
+            </Link>
           </div>
         </div>
         <div className="navbar-center hidden lg:flex">
