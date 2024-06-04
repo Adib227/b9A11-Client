@@ -4,14 +4,26 @@ const ExtraOne = () => {
   return (
     <div className="bg-[#fff9ed] my-7 lg:my-24 p-3 lg:p-9">
       <div className="py-6 ">
-        <h2 className="text-2xl text-[#ef7c40] text-center font-medium animate__animated animate__bounceInLeft">
+        <h2
+          className="text-2xl text-[#ef7c40] text-center font-medium"
+          data-aos="zoom-in-down"
+          data-aos-duration="1500"
+        >
           - Happy Volunteer -
         </h2>
-        <h1 className="text-4xl lg:text-5xl text-[#1e3446] text-center font-semibold animate__animated animate__bounceInRight">
+        <h1
+          className="text-4xl lg:text-5xl text-[#1e3446] text-center font-semibold "
+          data-aos="zoom-in-up"
+          data-aos-duration="1500"
+        >
           Our Happy Volunteer
         </h1>
       </div>
-      <div className="grid lg:flex max-w-6xl mx-auto rounded-3xl shadow-xl bg-white my-10 p-10 justify-evenly">
+      <div
+        className="grid lg:flex max-w-6xl mx-auto rounded-3xl shadow-xl bg-white my-10 p-10 justify-evenly"
+        data-aos="fade-right"
+        data-aos-duration="2000"
+      >
         <div className="w-full lg:w-1/6">
           <img
             src="https://i.ibb.co/gyRZJ5W/1-44b9543453d2cf8f875b.png"
@@ -36,7 +48,11 @@ const ExtraOne = () => {
           </div>
         </div>
       </div>
-      <div className="grid lg:flex max-w-6xl mx-auto rounded-3xl shadow-xl bg-white my-10 p-10 justify-evenly">
+      <div
+        className="grid lg:flex max-w-6xl mx-auto rounded-3xl shadow-xl bg-white my-10 p-10 justify-evenly"
+        data-aos="fade-left"
+        data-aos-duration="2000"
+      >
         <div className="w-full lg:w-1/6">
           <img
             src="https://i.ibb.co/WkwXxqN/3-1ee175cb644d1a334c36.png"

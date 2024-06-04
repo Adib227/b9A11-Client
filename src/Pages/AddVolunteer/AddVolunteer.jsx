@@ -20,7 +20,7 @@ const AddVolunteer = () => {
       <Helmet>
         <title>Helpass - Add Volunteer</title>
       </Helmet>
-      <section className="p-6 rounded-xl shadow-lg mb-20 dark:bg-base-200 dark:text-gray-900 max-w-7xl mx-auto">
+      <section className="p-6 rounded-xl shadow-lg mb-20 dark:bg-base-200 dark:text-gray-900 max-w-7xl mx-auto animate__animated animate__fadeInUp">
         <form
           noValidate=""
           action=""

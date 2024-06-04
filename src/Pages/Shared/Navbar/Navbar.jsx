@@ -31,6 +31,9 @@ const Navbar = () => {
         <Link to="/needVolunteer">Need Volunteer</Link>
       </li>
       <li className="font-semibold font-serif">
+        <Link to="/manageMyPost">Manage My Post</Link>
+      </li>
+      <li className="font-semibold font-serif">
         <Link to="/contactUs">Contact Us</Link>
       </li>
     </>
