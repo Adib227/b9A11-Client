@@ -1,11 +1,19 @@
-import { useContext } from 'react';
+import { useContext, useState } from 'react';
 import { AuthContext } from '../../Providers/AuthProvider';
 import 'animate.css';
 import { Helmet } from 'react-helmet';
+import DatePicker from 'react-datepicker';
+import 'react-datepicker/dist/react-datepicker.css';
 
 const AddVolunteer = () => {
   const { user } = useContext(AuthContext);
   console.log(user);
+
+  const [selectedDate, setSelectedDate] = useState(null);
+
+  const handleDateChange = date => {
+    setSelectedDate(date);
+  };
 
   return (
     <div>
@@ -84,14 +92,20 @@ const AddVolunteer = () => {
                 />
               </div>
               <div className="col-span-full sm:col-span-3 text-left mb-4">
-                <label htmlFor="deadline" className="font-medium">
+                <label htmlFor="deadline" className="font-medium ">
                   Deadline
                 </label>
-                <input
+                {/* <input
                   id="deadline"
                   type="text"
                   placeholder=""
                   className="w-full h-full rounded-md focus:ring focus:ring-opacity-75 dark:text-gray-50 focus:dark:ring-violet-600 dark:border-gray-300"
+                /> */}
+                <DatePicker
+                  selected={selectedDate}
+                  onChange={handleDateChange}
+                  dateFormat="dd-MM-yyyy"
+                  placeholderText="dd/mm/yyyy"
                 />
               </div>
               {user ? (
