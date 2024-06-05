@@ -10,6 +10,7 @@ import BeAVolunteer from '../Pages/BeAVolunteer/BeAVolunteer';
 import NeedVolunteer from '../Pages/NeedVolunteer/NeedVolunteer';
 import ContactUs from '../Pages/ContactUs/ContactUs';
 import ManagePost from '../Pages/ManagePost/ManagePost';
+import NeedVolunteerdetails from '../Pages/NeedVolunteer/NeedVolunteerdetails';
 
 const router = createBrowserRouter([
   {
@@ -36,6 +37,14 @@ const router = createBrowserRouter([
       {
         path: '/needVolunteer',
         element: <NeedVolunteer></NeedVolunteer>,
+        loader: () => fetch('http://localhost:5000/needs'),
+      },
+      {
+        path: '/needVolunteerdetails/:id',
+        element: <NeedVolunteerdetails></NeedVolunteerdetails>,
+        loader: ({ params }) => {
+          fetch(`http://localhost:5000/needs/${params.id}`);
+        },
       },
       {
         path: '/manageMyPost',

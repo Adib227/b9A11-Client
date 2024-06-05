@@ -1,8 +1,9 @@
 import { useContext, useEffect, useState } from 'react';
 import { Link } from 'react-router-dom';
 import { AuthContext } from '../../../Providers/AuthProvider';
-import tippy from 'tippy.js';
 import 'animate.css';
+import 'react-tooltip/dist/react-tooltip.css';
+import { Tooltip } from 'react-tooltip';
 
 const Navbar = () => {
   const { logOut, user } = useContext(AuthContext);
@@ -120,10 +121,13 @@ const Navbar = () => {
                       className="w-10 rounded-full"
                       alt=""
                       src={user.photoURL}
+                      data-tooltip-id="my-tooltip"
+                      data-tooltip-content={`${user.displayName} || ${user.email}`}
                     />
+                    <Tooltip id="my-tooltip"></Tooltip>
                   </div>
+
                   <div className="p-2">{user.displayName}</div>
-                  <div>{user.email}</div>
                 </div>
               </tippy>
               <tippy

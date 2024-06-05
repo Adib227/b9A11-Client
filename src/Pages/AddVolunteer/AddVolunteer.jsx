@@ -4,6 +4,7 @@ import 'animate.css';
 import { Helmet } from 'react-helmet';
 import DatePicker from 'react-datepicker';
 import 'react-datepicker/dist/react-datepicker.css';
+import Swal from 'sweetalert2';
 
 const AddVolunteer = () => {
   const { user } = useContext(AuthContext);
@@ -15,6 +16,50 @@ const AddVolunteer = () => {
     setSelectedDate(date);
   };
 
+  const handleAddForm = event => {
+    event.preventDefault();
+    const form = event.target;
+    const thumbNail = form.thumbNail.value;
+    const postTitle = form.postTitle.value;
+    const description = form.description.value;
+    const category = form.category.value;
+    const location = form.location.value;
+    const volunteerNeeded = form.volunteerNeeded.value;
+    const newVolunteer = {
+      thumbNail,
+      postTitle,
+      description,
+      category,
+      location,
+      volunteerNeeded,
+    };
+    console.log(newVolunteer);
+
+    fetch('http://localhost:5000/adds', {
+      method: 'POST',
+      headers: {
+        'content-type': 'application/json',
+      },
+      body: JSON.stringify(newVolunteer),
+    })
+      .then(res => res.json())
+      .then(data => {
+        console.log(data);
+      });
+  };
+
+  const handleClick = () => {
+    {
+      Swal.fire({
+        title: 'Success!',
+        text: 'Post Added Successfully',
+        icon: 'success',
+        confirmButtonText: 'Thank you',
+      });
+    }
+  };
+  console.log(handleClick);
+
   return (
     <div>
       <Helmet>
@@ -22,6 +67,7 @@ const AddVolunteer = () => {
       </Helmet>
       <section className="p-6 rounded-xl shadow-lg mb-20 dark:bg-base-200 dark:text-gray-900 max-w-7xl mx-auto animate__animated animate__fadeInUp">
         <form
+          onSubmit={handleAddForm}
           noValidate=""
           action=""
           className="max-w-full container flex flex-col mx-auto space-y-12"
@@ -33,9 +79,10 @@ const AddVolunteer = () => {
                   Thumbnail
                 </label>
                 <input
-                  id="thumbnail"
+                  // id="thumbnail"
                   type="text"
-                  className="w-full h-full rounded-xl dark:text-gray-50 focus:dark:ring-violet-600 dark:border-gray-300"
+                  name="thumbNail"
+                  className="w-full h-full rounded-xl dark:text-black-50 focus:dark:ring-violet-600 dark:border-gray-300"
                 />
               </div>
               <div className="col-span-full sm:col-span-3 text-left mb-4">
@@ -43,9 +90,10 @@ const AddVolunteer = () => {
                   Post Title
                 </label>
                 <input
-                  id="postTitle"
+                  // id="postTitle"
                   type="text"
-                  className="w-full h-full rounded-md focus:ring focus:ring-opacity-75 dark:text-gray-50 focus:dark:ring-violet-600 dark:border-gray-300"
+                  name="postTitle"
+                  className="w-full h-full rounded-md focus:ring focus:ring-opacity-75 dark:text-black-50 focus:dark:ring-violet-600 dark:border-gray-300"
                 />
               </div>
               <div className="col-span-full sm:col-span-3 text-left mb-4">
@@ -53,9 +101,10 @@ const AddVolunteer = () => {
                   Description
                 </label>
                 <input
-                  id="description"
+                  // id="description"
                   type="text"
-                  className="w-full h-full rounded-md focus:ring focus:ring-opacity-75 dark:text-gray-50 focus:dark:ring-violet-600 dark:border-gray-300"
+                  name="description"
+                  className="w-full h-full rounded-md focus:ring focus:ring-opacity-75 dark:text-black-50 focus:dark:ring-violet-600 dark:border-gray-300"
                 />
               </div>
               <div className="col-span-full sm:col-span-3 text-left mb-4">
@@ -63,10 +112,11 @@ const AddVolunteer = () => {
                   Category
                 </label>
                 <input
-                  id="category"
+                  // id="category"
                   type="text"
+                  name="category"
                   placeholder=""
-                  className="w-full h-full rounded-md focus:ring focus:ring-opacity-75 dark:text-gray-50 focus:dark:ring-violet-600 dark:border-gray-300"
+                  className="w-full h-full rounded-md focus:ring focus:ring-opacity-75 dark:text-black-50 focus:dark:ring-violet-600 dark:border-gray-300"
                 />
               </div>
               <div className="col-span-full sm:col-span-3 text-left mb-4">
@@ -74,10 +124,11 @@ const AddVolunteer = () => {
                   Location
                 </label>
                 <input
-                  id="location"
+                  // id="location"
                   type="text"
+                  name="location"
                   placeholder=""
-                  className="w-full h-full rounded-md focus:ring focus:ring-opacity-75 dark:text-gray-50 focus:dark:ring-violet-600 dark:border-gray-300"
+                  className="w-full h-full rounded-md focus:ring focus:ring-opacity-75 dark:text-black-50 focus:dark:ring-violet-600 dark:border-gray-300"
                 />
               </div>
               <div className="col-span-full sm:col-span-3 text-left mb-4">
@@ -85,10 +136,11 @@ const AddVolunteer = () => {
                   No. of volunteers needed
                 </label>
                 <input
-                  id="volunteerNeeded"
+                  // id="volunteerNeeded"
                   type="text"
+                  name="volunteerNeeded"
                   placeholder=""
-                  className="w-full h-full rounded-md focus:ring focus:ring-opacity-75 dark:text-gray-50 focus:dark:ring-violet-600 dark:border-gray-300"
+                  className="w-full h-full rounded-md focus:ring focus:ring-opacity-75 dark:text-black-50 focus:dark:ring-violet-600 dark:border-gray-300"
                 />
               </div>
               <div className="col-span-full sm:col-span-3 text-left mb-4">
@@ -115,11 +167,11 @@ const AddVolunteer = () => {
                       Name
                     </label>
                     <input
-                      id="name"
+                      // id="name"
                       type="text"
-                      placeholder=""
-                      className="w-full h-full rounded-md focus:ring focus:ring-opacity-75 dark:text-gray-50 focus:dark:ring-violet-600 dark:border-gray-300"
-                      {...user.displayName}
+                      name="name"
+                      defaultValue={user.displayName}
+                      className="w-full h-full rounded-md focus:ring focus:ring-opacity-75 dark:text-black-50 focus:dark:ring-violet-600 dark:border-gray-300"
                     />
                   </div>
                   <div className="col-span-full sm:col-span-6 text-left mb-4">
@@ -127,11 +179,11 @@ const AddVolunteer = () => {
                       Email
                     </label>
                     <input
-                      id="email"
+                      // id="email"
                       type="email"
-                      placeholder=""
-                      className="w-full h-full rounded-md focus:ring focus:ring-opacity-75 dark:text-gray-50 focus:dark:ring-violet-600 dark:border-gray-300"
-                      {...user.email}
+                      name="email"
+                      defaultValue={user.email}
+                      className="w-full h-full rounded-md focus:ring focus:ring-opacity-75 dark:text-black-50 focus:dark:ring-violet-600 dark:border-gray-300"
                     />
                   </div>
                 </>
@@ -143,10 +195,11 @@ const AddVolunteer = () => {
                       Name
                     </label>
                     <input
-                      id="name"
+                      // id="name"
                       type="text"
+                      name="name"
                       placeholder=""
-                      className="w-full h-full rounded-md focus:ring focus:ring-opacity-75 dark:text-gray-50 focus:dark:ring-violet-600 dark:border-gray-300"
+                      className="w-full h-full rounded-md focus:ring focus:ring-opacity-75 dark:text-black-50 focus:dark:ring-violet-600 dark:border-gray-300"
                     />
                   </div>
                   <div className="col-span-full sm:col-span-6 text-left mb-4">
@@ -154,16 +207,22 @@ const AddVolunteer = () => {
                       Email
                     </label>
                     <input
-                      id="email"
+                      // id="email"
                       type="email"
+                      name="email"
                       placeholder=""
-                      className="w-full h-full rounded-md focus:ring focus:ring-opacity-75 dark:text-gray-50 focus:dark:ring-violet-600 dark:border-gray-300"
+                      className="w-full h-full rounded-md focus:ring focus:ring-opacity-75 dark:text-black-50 focus:dark:ring-violet-600 dark:border-gray-300"
                     />
                   </div>
                 </>
               )}
               <div className="col-span-full sm:col-span-6 my-4">
-                <button className="btn btn-success w-full">Add Post</button>
+                <button
+                  onClick={handleClick}
+                  className="btn btn-success w-full"
+                >
+                  Add Post
+                </button>
               </div>
             </div>
           </fieldset>

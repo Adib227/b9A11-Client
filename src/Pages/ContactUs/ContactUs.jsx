@@ -48,7 +48,7 @@ const ContactUs = () => {
                   id="yourname"
                   type="text"
                   placeholder="Your Name"
-                  className="w-full h-full rounded-md focus:ring focus:ring-opacity-75 dark:text-gray-50 focus:dark:ring-violet-600 dark:border-2 p-2"
+                  className="w-full h-full rounded-md focus:ring focus:ring-opacity-75 dark:text-black-50 focus:dark:ring-violet-600 dark:border-2 p-2"
                 />
               </div>
               <div className="col-span-full sm:col-span-3">
@@ -59,7 +59,7 @@ const ContactUs = () => {
                   id="youremail"
                   type="text"
                   placeholder="Your Email"
-                  className="w-full h-full rounded-md focus:ring focus:ring-opacity-75 dark:text-gray-50 focus:dark:ring-violet-600 dark:border-2 p-2"
+                  className="w-full h-full rounded-md focus:ring focus:ring-opacity-75 dark:text-black-50 focus:dark:ring-violet-600 dark:border-2 p-2"
                 />
               </div>
               <div className="col-span-full pt-4">
@@ -69,7 +69,7 @@ const ContactUs = () => {
                 <textarea
                   id="message"
                   placeholder="Your Message"
-                  className="w-full h-full rounded-md focus:ring focus:ring-opacity-75 dark:text-gray-50 focus:dark:ring-violet-600 dark:border-2 p-3"
+                  className="w-full h-full rounded-md focus:ring focus:ring-opacity-75 dark:text-black-50 focus:dark:ring-violet-600 dark:border-2 p-3"
                   data-gramm="false"
                   wt-ignore-input="true"
                 ></textarea>

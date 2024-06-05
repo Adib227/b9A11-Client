@@ -1,20 +1,23 @@
 import { Helmet } from 'react-helmet';
+import { useLoaderData } from 'react-router-dom';
+import NeedVolunteerdetails from './NeedVolunteerdetails';
 
 const NeedVolunteer = () => {
+  const needVolunteer = useLoaderData();
+  console.log(needVolunteer);
+
   return (
     <div>
       <Helmet>
         <title>Helpass - Need Volunteer</title>
       </Helmet>
-      <div className="card w-96 bg-base-100 shadow-xl">
-        <div className="card-body">
-          <h2 className="card-title">Card title!</h2>
-          <p>If a dog chews shoes whose shoes does he choose?</p>
-          <div className="card-actions justify-end">
-            <button className="btn btn-primary">Buy Now</button>
-          </div>
-        </div>
-      </div>
+      <h1>Need Volunteer?</h1>
+      {needVolunteer.map(needs => (
+        <NeedVolunteerdetails
+          key={needs._id}
+          needs={needs}
+        ></NeedVolunteerdetails>
+      ))}
     </div>
   );
 };
