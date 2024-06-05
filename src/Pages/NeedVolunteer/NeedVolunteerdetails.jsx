@@ -6,8 +6,8 @@ const NeedVolunteerdetails = ({ needs }) => {
 
   return (
     <div>
-      <div className="card card-side max-w-5xl mx-auto bg-base-100 shadow-xl">
-        <figure className="w-1/2 p-8">
+      <div className="card grid lg:flex card-side max-w-5xl mx-auto bg-base-100 shadow-xl">
+        <figure className="sm:w-full lg:w-1/2 p-8">
           <img className="rounded-xl" src={thumbnail} alt="Movie" />
         </figure>
         <div className="card-body">

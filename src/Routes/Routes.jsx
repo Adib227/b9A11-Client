@@ -11,6 +11,9 @@ import NeedVolunteer from '../Pages/NeedVolunteer/NeedVolunteer';
 import ContactUs from '../Pages/ContactUs/ContactUs';
 import ManagePost from '../Pages/ManagePost/ManagePost';
 import NeedVolunteerdetails from '../Pages/NeedVolunteer/NeedVolunteerdetails';
+import Details from '../Pages/Details/Details';
+import AllVolunteer from '../Pages/AllVolunteer/AllVolunteer';
+import Detailss from '../Pages/AllVolunteer/Details/Detailss';
 
 const router = createBrowserRouter([
   {
@@ -31,20 +34,46 @@ const router = createBrowserRouter([
         ),
       },
       {
+        path: '/allVolunteer',
+        element: (
+          <PrivateRoute>
+            <AllVolunteer></AllVolunteer>
+          </PrivateRoute>
+        ),
+        loader: () => fetch('http://localhost:5000/adds'),
+      },
+      {
         path: '/beAVolunteer',
         element: <BeAVolunteer></BeAVolunteer>,
       },
       {
         path: '/needVolunteer',
-        element: <NeedVolunteer></NeedVolunteer>,
+        element: (
+          <PrivateRoute>
+            <NeedVolunteer></NeedVolunteer>
+          </PrivateRoute>
+        ),
         loader: () => fetch('http://localhost:5000/needs'),
       },
       {
-        path: '/needVolunteerdetails/:id',
-        element: <NeedVolunteerdetails></NeedVolunteerdetails>,
-        loader: ({ params }) => {
-          fetch(`http://localhost:5000/needs/${params.id}`);
-        },
+        path: 'detailss/:id',
+        element: (
+          <PrivateRoute>
+            <Detailss></Detailss>
+          </PrivateRoute>
+        ),
+        loader: ({ params }) =>
+          fetch(`http://localhost:5000/adds/${params.id}`),
+      },
+      {
+        path: 'details/:id',
+        element: (
+          <PrivateRoute>
+            <Details></Details>
+          </PrivateRoute>
+        ),
+        loader: ({ params }) =>
+          fetch(`http://localhost:5000/needs/${params.id}`),
       },
       {
         path: '/manageMyPost',

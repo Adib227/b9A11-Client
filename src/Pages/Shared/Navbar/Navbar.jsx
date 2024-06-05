@@ -26,6 +26,10 @@ const Navbar = () => {
         <Link to="/addVolunteer">Add Volunteer </Link>
       </li>
       <li className="font-semibold font-serif">
+        <Link to="/allVolunteer">All Volunteer </Link>
+      </li>
+
+      <li className="font-semibold font-serif">
         <Link to="/beAVolunteer">Be A Volunteer</Link>
       </li>
       <li className="font-semibold font-serif">
@@ -126,8 +130,6 @@ const Navbar = () => {
                     />
                     <Tooltip id="my-tooltip"></Tooltip>
                   </div>
-
-                  <div className="p-2">{user.displayName}</div>
                 </div>
               </tippy>
               <tippy

@@ -1,78 +1,50 @@
-{
-  "thumbnail": "https://example.com/image.jpg",
-  "postTitle": "Volunteers Needed for Community Clean-Up",
-  "description": "Join us for a community clean-up event to help keep our neighborhood beautiful. All materials will be provided.",
-  "category": "social service",
-  "location": "123 Main St, Anytown, USA",
-  "numVolunteersNeeded": 15,
-  "deadline": "2024-07-15T23:59:59Z",
-  "organizer": {
-    "name": "John Doe",
-    "email": "johndoe@example.com"
+[
+  {
+    "thumbnail": "https://i.ibb.co/zVz5gD6/pexels-photo-9034668.jpg",
+    "post_title": "Beach Cleanup Event",
+    "description": "Join us to clean the beach and help protect marine life.",
+    "category": "Environment",
+    "location": "Santa Monica Beach, CA",
+    "volunteers_needed": 50
+  },
+  {
+    "thumbnail": "https://i.ibb.co/rkFhHVm/Preparing-20000-Books-for-Tanzania-1-1024x646.jpg",
+    "post_title": "Library Book Sorting",
+    "description": "Help us sort and organize books at the community library.",
+    "category": "Education",
+    "location": "Downtown Library, NY",
+    "volunteers_needed": 10
+  },
+  {
+    "thumbnail": "https://i.ibb.co/BqBqYhX/pexels-photo-6646917.jpg",
+    "post_title": "Meals on Wheels",
+    "description": "Deliver meals to the elderly and disabled in your area.",
+    "category": "Social Service",
+    "location": "Various locations, TX",
+    "volunteers_needed": 20
+  },
+  {
+    "thumbnail": "https://i.ibb.co/qFCZhPd/pexels-photo-5486963.jpg",
+    "post_title": "Animal Shelter Volunteering",
+    "description": "Assist with caring for animals and maintaining the shelter.",
+    "category": "Animal Welfare",
+    "location": "Greenwood Animal Shelter, CO",
+    "volunteers_needed": 15
+  },
+  {
+    "thumbnail": "https://i.ibb.co/51QxDRG/pexels-photo-7656721.jpg",
+    "post_title": "Community Garden Project",
+    "description": "Help plant and maintain a community garden for local residents.",
+    "category": "Environment",
+    "location": "Rose Park, FL",
+    "volunteers_needed": 25
+  },
+  {
+    "thumbnail": "https://i.ibb.co/Qrx37tm/pexels-photo-12193105.webp",
+    "post_title": "Blood Donation Camp",
+    "description": "Volunteer to assist with the organization and setup of a blood donation camp.",
+    "category": "Healthcare",
+    "location": "City Hospital, IL",
+    "volunteers_needed": 30
   }
-}
-{
-  "thumbnail": "https://example.com/image.jpg",
-  "postTitle": "Volunteers Needed for Community Clean-Up",
-  "description": "Join us for a community clean-up event to help keep our neighborhood beautiful. All materials will be provided.",
-  "category": "social service",
-  "location": "123 Main St, Anytown, USA",
-  "numVolunteersNeeded": 15,
-  "deadline": "2024-07-15T23:59:59Z",
-  "organizer": {
-    "name": "John Doe",
-    "email": "johndoe@example.com"
-  }
-}
-{
-  "thumbnail": "https://example.com/image.jpg",
-  "postTitle": "Volunteers Needed for Community Clean-Up",
-  "description": "Join us for a community clean-up event to help keep our neighborhood beautiful. All materials will be provided.",
-  "category": "social service",
-  "location": "123 Main St, Anytown, USA",
-  "numVolunteersNeeded": 15,
-  "deadline": "2024-07-15T23:59:59Z",
-  "organizer": {
-    "name": "John Doe",
-    "email": "johndoe@example.com"
-  }
-}
-{
-  "thumbnail": "https://example.com/image.jpg",
-  "postTitle": "Volunteers Needed for Community Clean-Up",
-  "description": "Join us for a community clean-up event to help keep our neighborhood beautiful. All materials will be provided.",
-  "category": "social service",
-  "location": "123 Main St, Anytown, USA",
-  "numVolunteersNeeded": 15,
-  "deadline": "2024-07-15T23:59:59Z",
-  "organizer": {
-    "name": "John Doe",
-    "email": "johndoe@example.com"
-  }
-}
-{
-  "thumbnail": "https://example.com/image.jpg",
-  "postTitle": "Volunteers Needed for Community Clean-Up",
-  "description": "Join us for a community clean-up event to help keep our neighborhood beautiful. All materials will be provided.",
-  "category": "social service",
-  "location": "123 Main St, Anytown, USA",
-  "numVolunteersNeeded": 15,
-  "deadline": "2024-07-15T23:59:59Z",
-  "organizer": {
-    "name": "John Doe",
-    "email": "johndoe@example.com"
-  }
-}
-{
-  "thumbnail": "https://example.com/image.jpg",
-  "postTitle": "Volunteers Needed for Community Clean-Up",
-  "description": "Join us for a community clean-up event to help keep our neighborhood beautiful. All materials will be provided.",
-  "category": "social service",
-  "location": "123 Main St, Anytown, USA",
-  "numVolunteersNeeded": 15,
-  "deadline": "2024-07-15T23:59:59Z",
-  "organizer": {
-    "name": "John Doe",
-    "email": "johndoe@example.com"
-  }
-}
+]
