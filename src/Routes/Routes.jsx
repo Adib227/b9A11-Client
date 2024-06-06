@@ -9,8 +9,6 @@ import PrivateRoute from './PrivateRoute/PrivateRoute';
 import BeAVolunteer from '../Pages/BeAVolunteer/BeAVolunteer';
 import NeedVolunteer from '../Pages/NeedVolunteer/NeedVolunteer';
 import ContactUs from '../Pages/ContactUs/ContactUs';
-import ManagePost from '../Pages/ManagePost/ManagePost';
-import NeedVolunteerdetails from '../Pages/NeedVolunteer/NeedVolunteerdetails';
 import Details from '../Pages/Details/Details';
 import AllVolunteer from '../Pages/AllVolunteer/AllVolunteer';
 import Detailss from '../Pages/AllVolunteer/Details/Detailss';

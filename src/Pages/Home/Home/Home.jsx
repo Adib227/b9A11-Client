@@ -15,6 +15,14 @@ const Home = () => {
         <title>Helpass - Home</title>
       </Helmet>
       <Banner></Banner>
+      <div>
+        <h1 className="text-center text-4xl lg:text-6xl text-[#d6547d] mt-16 mb-4 font-bold">
+          Volunteer Works
+        </h1>
+        <p className="text-center text-xl">
+          Find out some of our project and join with us
+        </p>
+      </div>
       <div className="grid lg:grid-cols-3 mx-auto max-w-7xl gap-9">
         {' '}
         {home.map(alls => (
