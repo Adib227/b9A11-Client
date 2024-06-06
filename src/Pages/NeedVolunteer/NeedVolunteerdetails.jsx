@@ -1,4 +1,3 @@
-import React from 'react';
 import { Link } from 'react-router-dom';
 
 const NeedVolunteerdetails = ({ needs }) => {
@@ -15,8 +14,8 @@ const NeedVolunteerdetails = ({ needs }) => {
           <p className="text-2xl">Category: {category}</p>
           <p className="text-2xl">Deadline: {deadline}</p>
           <div className="card-actions">
-            <Link to={`/needVolunteerdetails/${_id}`}>
-              <button className="btn btn-primary">View Details</button>
+            <Link to={`/beAVolunteer/${_id}`}>
+              <button className="btn btn-primary">Be A Volunteer</button>
             </Link>
           </div>
         </div>

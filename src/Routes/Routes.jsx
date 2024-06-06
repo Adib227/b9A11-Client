@@ -48,6 +48,8 @@ const router = createBrowserRouter([
       {
         path: '/beAVolunteer',
         element: <BeAVolunteer></BeAVolunteer>,
+        loader: ({ params }) =>
+          fetch(`http://localhost:5000/needs/${params.id}`),
       },
       {
         path: '/needVolunteer',
@@ -85,7 +87,11 @@ const router = createBrowserRouter([
       },
       {
         path: '/updatePage/:id',
-        element: <Update></Update>,
+        element: (
+          <PrivateRoute>
+            <Update></Update>
+          </PrivateRoute>
+        ),
         loader: ({ params }) =>
           fetch(`http://localhost:5000/adds/${params.id}`),
       },

@@ -29,9 +29,9 @@ const Navbar = () => {
         <Link to="/allVolunteer">All Volunteer </Link>
       </li>
 
-      <li className="font-semibold font-serif">
+      {/* <li className="font-semibold font-serif">
         <Link to="/beAVolunteer">Be A Volunteer</Link>
-      </li>
+      </li> */}
       <li className="font-semibold font-serif">
         <Link to="/needVolunteer">Need Volunteer</Link>
       </li>

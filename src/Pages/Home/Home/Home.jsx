@@ -2,7 +2,7 @@ import { Helmet } from 'react-helmet';
 import { Banner } from '../Banner/Banner';
 import ExtraOne from '../ExtraOne/ExtraOne';
 import ExtraTwo from '../ExtraTwo/ExtraTwo';
-import { useLoaderData } from 'react-router-dom';
+import { Link, useLoaderData } from 'react-router-dom';
 import AllVolunteerDetailsHome from '../../AllVolunteer/AllVolunteerDetailsHome';
 
 const Home = () => {
@@ -23,6 +23,14 @@ const Home = () => {
             alls={alls}
           ></AllVolunteerDetailsHome>
         ))}
+      </div>
+      <div className="text-center mt-10">
+        <Link to="/allVolunteer">
+          {' '}
+          <button className="btn btn-outline btn-secondary w-56 text-xl ">
+            See All
+          </button>
+        </Link>
       </div>
       <ExtraTwo></ExtraTwo>
       <ExtraOne></ExtraOne>

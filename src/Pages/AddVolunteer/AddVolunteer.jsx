@@ -65,6 +65,9 @@ const AddVolunteer = () => {
       <Helmet>
         <title>Helpass - Add Volunteer</title>
       </Helmet>
+      <h1 className="text-5xl font-bold text-center text-pink-400 mb-6 animate__animated animate__fadeInDown">
+        Add Volunteer
+      </h1>
       <section className="p-6 rounded-xl shadow-lg mb-20 dark:bg-base-200 dark:text-gray-900 max-w-7xl mx-auto animate__animated animate__fadeInUp">
         <form
           onSubmit={handleAddForm}
