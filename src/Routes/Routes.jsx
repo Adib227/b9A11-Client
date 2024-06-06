@@ -15,6 +15,7 @@ import Details from '../Pages/Details/Details';
 import AllVolunteer from '../Pages/AllVolunteer/AllVolunteer';
 import Detailss from '../Pages/AllVolunteer/Details/Detailss';
 import MyPost from '../Pages/ManagePost/MyPost';
+import Update from '../Pages/ManagePost/Update';
 
 const router = createBrowserRouter([
   {
@@ -81,6 +82,12 @@ const router = createBrowserRouter([
         path: '/myPost',
         element: <MyPost></MyPost>,
         loader: () => fetch('http://localhost:5000/adds'),
+      },
+      {
+        path: '/updatePage/:id',
+        element: <Update></Update>,
+        loader: ({ params }) =>
+          fetch(`http://localhost:5000/adds/${params.id}`),
       },
       {
         path: '/contactUs',
