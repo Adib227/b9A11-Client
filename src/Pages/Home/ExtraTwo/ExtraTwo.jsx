@@ -13,7 +13,7 @@ const ExtraTwo = () => {
         data-aos-duration="1300"
       >
         <p className="text-[#ef7c40] text-2xl">- OUR VOLUNTEER -</p>
-        <h2 className="text-[#1e3446] text-4xl font-serif font-bold my-3">
+        <h2 className="text-[#1e3446]  text-4xl font-serif font-bold my-3">
           {' '}
           Meet The Expert <br /> Team Of Volunteer.
         </h2>

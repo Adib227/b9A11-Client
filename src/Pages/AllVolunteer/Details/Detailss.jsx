@@ -1,4 +1,4 @@
-import { Link, useLoaderData, useRouteLoaderData } from 'react-router-dom';
+import { Link, useLoaderData } from 'react-router-dom';
 
 const Detailss = () => {
   const detailed = useLoaderData();
@@ -9,9 +9,9 @@ const Detailss = () => {
       <h1 className="animate__animated animate__bounceInLeft  text-4xl text-center font-bold text-cyan-600">
         Details Infotmation
       </h1>
-      <div>
+      <div className=" ">
         <div
-          className="my-12 max-w-7xl mx-auto bg-base-300 shadow-xl grid md:grid lg:flex"
+          className="my-12 max-w-7xl mx-auto bg-base-300 shadow-xl  grid md:grid lg:flex"
           data-aos="zoom-in"
           data-aos-duration="1500"
         >
@@ -22,7 +22,7 @@ const Detailss = () => {
               alt=""
             />
           </div>
-          <div className="card-body">
+          <div className="card-body space-y-4">
             <h2 className="text-lg font-normal">
               Title:{' '}
               <span className="text-xl font-semibold">
@@ -47,14 +47,21 @@ const Detailss = () => {
             </h2>
             <h2 className="text-lg font-normal">
               {' '}
-              Seasonality :{' '}
+              Number of Volunteer needed :{' '}
               <span className="text-xl font-semibold">
                 {detailed.volunteerNeeded}
               </span>
             </h2>
+            <h2 className="text-lg font-normal">
+              {' '}
+              Deadline :{' '}
+              <span className="text-xl font-semibold">{detailed.deadline}</span>
+            </h2>
 
             <Link to="/">
-              <button className="btn btn-success w-full">Back to home</button>
+              <button className="btn btn-success w-full mt-5">
+                Back to home
+              </button>
             </Link>
           </div>
         </div>

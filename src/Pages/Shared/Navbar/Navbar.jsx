@@ -36,7 +36,7 @@ const Navbar = () => {
         <Link to="/needVolunteer">Need Volunteer</Link>
       </li>
       <li className="font-semibold font-serif">
-        <Link to="/manageMyPost">Manage My Post</Link>
+        <Link to="/myPost">Manage My Post</Link>
       </li>
       <li className="font-semibold font-serif">
         <Link to="/contactUs">Contact Us</Link>
@@ -112,7 +112,6 @@ const Navbar = () => {
             onChange={handleToggle}
             type="checkbox"
             className="toggle mr-4"
-            checked
           />
 
           {user ? (
