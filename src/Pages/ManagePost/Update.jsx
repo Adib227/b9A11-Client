@@ -67,45 +67,6 @@ const Update = () => {
       });
   };
 
-  // const handleUpdatePost = event => {
-  //   event.preventDefault();
-  //   const form = event.target;
-  //   const thumbNail = form.thumbNail.value;
-  //   const postTitle = form.postTitle.value;
-  //   const description = form.description.value;
-  //   const category = form.category.value;
-  //   const location = form.location.value;
-  //   const volunteerNeeded = form.volunteerNeeded.value;
-  //   const updatedVolunteer = {
-  //     thumbNail,
-  //     postTitle,
-  //     description,
-  //     category,
-  //     location,
-  //     volunteerNeeded,
-  //   };
-  //   console.log(updatedVolunteer);
-
-  //   fetch(`https://localhost:5000/${_id}`, {
-  //     method: 'PUT',
-  //     headers: {
-  //       'content-type': 'application/json',
-  //     },
-  //     body: JSON.stringify(updatedVolunteer),
-  //   })
-  //     .then(res => res.json())
-  //     .then(data => {
-  //       console.log(data);
-  //       if (data.modifiedCount > 0) {
-  //         Swal.fire({
-  //           title: 'Success!',
-  //           text: 'Post Updated Successfully',
-  //           icon: 'success',
-  //           confirmButtonText: 'Thank you',
-  //         });
-  //       }
-  //     });
-
   return (
     <div>
       {' '}

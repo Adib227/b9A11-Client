@@ -44,7 +44,7 @@ const router = createBrowserRouter([
         loader: () => fetch('http://localhost:5000/adds'),
       },
       {
-        path: '/beAVolunteer',
+        path: '/beAVolunteer/:id',
         element: <BeAVolunteer></BeAVolunteer>,
         loader: ({ params }) =>
           fetch(`http://localhost:5000/needs/${params.id}`),

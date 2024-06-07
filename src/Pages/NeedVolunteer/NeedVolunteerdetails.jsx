@@ -1,7 +1,14 @@
 import { Link } from 'react-router-dom';
 
 const NeedVolunteerdetails = ({ needs }) => {
-  const { thumbnail, post_title, category, deadline, _id } = needs;
+  const {
+    thumbnail,
+    post_title,
+    category,
+    deadline,
+
+    _id,
+  } = needs;
 
   return (
     <div>

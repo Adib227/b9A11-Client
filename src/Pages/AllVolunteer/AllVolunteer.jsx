@@ -13,6 +13,9 @@ const AllVolunteer = () => {
       <Helmet>
         <title>Helpass - All Volunteer</title>
       </Helmet>
+      <div className="text-5xl text-center font-bold my-12 text-purple-500 animate__animated animate__fadeInDown">
+        All Projects
+      </div>
       {all.map(alls => (
         <AllVolunteerDetails key={alls._id} alls={alls}></AllVolunteerDetails>
       ))}

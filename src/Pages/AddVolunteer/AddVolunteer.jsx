@@ -85,6 +85,7 @@ const AddVolunteer = () => {
                   // id="thumbnail"
                   type="text"
                   name="thumbNail"
+                  required
                   className="w-full h-full rounded-xl dark:text-black-50 focus:dark:ring-violet-600 dark:border-gray-300"
                 />
               </div>
@@ -96,6 +97,7 @@ const AddVolunteer = () => {
                   // id="postTitle"
                   type="text"
                   name="postTitle"
+                  required
                   className="w-full h-full rounded-md focus:ring focus:ring-opacity-75 dark:text-black-50 focus:dark:ring-violet-600 dark:border-gray-300"
                 />
               </div>
@@ -143,6 +145,7 @@ const AddVolunteer = () => {
                   type="text"
                   name="volunteerNeeded"
                   placeholder=""
+                  required
                   className="w-full h-full rounded-md focus:ring focus:ring-opacity-75 dark:text-black-50 focus:dark:ring-violet-600 dark:border-gray-300"
                 />
               </div>
