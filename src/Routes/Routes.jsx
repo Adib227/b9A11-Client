@@ -24,7 +24,7 @@ const router = createBrowserRouter([
       {
         path: '/',
         element: <Home></Home>,
-        loader: () => fetch('http://localhost:5000/adds'),
+        loader: () => fetch('https://b9-a11-server-one.vercel.app/adds'),
       },
       {
         path: '/addVolunteer',
@@ -41,13 +41,13 @@ const router = createBrowserRouter([
             <AllVolunteer></AllVolunteer>
           </PrivateRoute>
         ),
-        loader: () => fetch('http://localhost:5000/adds'),
+        loader: () => fetch('https://b9-a11-server-one.vercel.app/adds'),
       },
       {
         path: '/beAVolunteer/:id',
         element: <BeAVolunteer></BeAVolunteer>,
         loader: ({ params }) =>
-          fetch(`http://localhost:5000/needs/${params.id}`),
+          fetch(`https://b9-a11-server-one.vercel.app/needs/${params.id}`),
       },
       {
         path: '/needVolunteer',
@@ -56,7 +56,7 @@ const router = createBrowserRouter([
             <NeedVolunteer></NeedVolunteer>
           </PrivateRoute>
         ),
-        loader: () => fetch('http://localhost:5000/needs'),
+        loader: () => fetch('https://b9-a11-server-one.vercel.app/needs'),
       },
       {
         path: 'detailss/:id',
@@ -66,7 +66,7 @@ const router = createBrowserRouter([
           </PrivateRoute>
         ),
         loader: ({ params }) =>
-          fetch(`http://localhost:5000/adds/${params.id}`),
+          fetch(`https://b9-a11-server-one.vercel.app/adds/${params.id}`),
       },
       {
         path: 'details/:id',
@@ -76,12 +76,12 @@ const router = createBrowserRouter([
           </PrivateRoute>
         ),
         loader: ({ params }) =>
-          fetch(`http://localhost:5000/needs/${params.id}`),
+          fetch(`https://b9-a11-server-one.vercel.app/needs/${params.id}`),
       },
       {
         path: '/myPost',
         element: <MyPost></MyPost>,
-        loader: () => fetch('http://localhost:5000/adds'),
+        loader: () => fetch('https://b9-a11-server-one.vercel.app/adds'),
       },
       {
         path: '/updatePage/:id',
@@ -91,7 +91,7 @@ const router = createBrowserRouter([
           </PrivateRoute>
         ),
         loader: ({ params }) =>
-          fetch(`http://localhost:5000/adds/${params.id}`),
+          fetch(`https://b9-a11-server-one.vercel.app/adds/${params.id}`),
       },
       {
         path: '/contactUs',

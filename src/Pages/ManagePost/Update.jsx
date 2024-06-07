@@ -46,7 +46,7 @@ const Update = () => {
     };
     console.log(updatedVolunteer);
 
-    fetch(`http://localhost:5000/adds/${_id}`, {
+    fetch(`https://b9-a11-server-one.vercel.app/adds/${_id}`, {
       method: 'PUT',
       headers: {
         'content-type': 'application/json',

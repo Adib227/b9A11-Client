@@ -47,7 +47,7 @@ const BeAVolunteer = () => {
     };
     console.log(addedVolunteer);
 
-    fetch(`http://localhost:5000/needs/${_id}`, {
+    fetch(`https://b9-a11-server-one.vercel.app/needs/${_id}`, {
       method: 'PUT',
       headers: {
         'content-type': 'application/json',

@@ -16,7 +16,7 @@ const Home = () => {
       </Helmet>
       <Banner></Banner>
       <div>
-        <h1 className="text-center text-4xl lg:text-6xl text-[#d6547d] mt-16 mb-4 font-bold">
+        <h1 className="text-center text-4xl lg:text-6xl text-[#d6547d] mt-16 mb-4 font-bold animate__animated animate__zoomIn">
           Volunteer Works
         </h1>
         <p className="text-center text-xl">
